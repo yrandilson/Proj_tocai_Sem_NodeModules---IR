@@ -1,0 +1,17 @@
+name: Deploy TrocaAi
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Rebuild e reinicia containers
+        run: |
+          cd /home/irn/projetos/trocaai/Proj_tocai_Sem_NodeModules---IR-master
+          docker compose up -d --build
