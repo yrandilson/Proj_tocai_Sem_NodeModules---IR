@@ -1,0 +1,66 @@
+services:
+
+  backend:
+    build:
+      context: ./back
+      dockerfile: Dockerfile
+    container_name: trocaai_backend
+    restart: unless-stopped
+    env_file: ./back/.env
+    environment:
+      NODE_ENV: production
+    volumes:
+      - uploads_data:/app/uploads
+    expose:
+      - "3000"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - trocaai_net
+
+  frontend:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    container_name: trocaai_frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - trocaai_net
+
+  db:
+    image: mysql:8.4
+    container_name: trocaai_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: RootTrocaai@2024
+      MYSQL_DATABASE: trocaai_prod
+      MYSQL_USER: trocaai
+      MYSQL_PASSWORD: Trocaai@2024Forte
+
+    volumes:
+      - db_data:/var/lib/mysql
+    expose:
+      - "3306"
+    networks:
+      - trocaai_net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pRootTrocaai@2024"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 60s
+
+volumes:
+  db_data:
+    driver: local
+  uploads_data:
+    driver: local
+
+networks:
+  trocaai_net:
+    driver: bridge

@@ -1,0 +1,264 @@
+# 📋 MAPA DE ARQUIVOS - TrocaAi
+
+Este arquivo lista todos os arquivos criados e qual conteúdo deve ser colado em cada um.
+Use este guia para copiar o conteúdo correto em cada arquivo.
+
+## 📦 BACKEND
+
+1. `backend/package.json`
+   → Copie o conteúdo de: **Backend - package.json**
+
+2. `backend/tsconfig.json`
+   → Copie o conteúdo de: **Backend - tsconfig.json**
+
+3. `backend/.env.example`
+   → Copie o conteúdo de: **Backend - .env.example**
+
+4. `backend/.gitignore`
+   → Copie o conteúdo de: **Backend - .gitignore**
+
+5. `backend/src/config/database.ts`
+   → Copie o conteúdo de: **Backend - database.ts**
+
+6. `backend/src/entities/User.ts`
+   → Copie o conteúdo de: **Backend - User.ts**
+
+7. `backend/src/entities/Item.ts`
+   → Copie o conteúdo de: **Backend - Item.ts**
+
+8. `backend/src/entities/Proposal.ts`
+   → Copie o conteúdo de: **Backend - Proposal.ts**
+
+9. `backend/src/middlewares/auth.middleware.ts`
+   → Copie o conteúdo de: **Backend - auth.middleware.ts**
+
+10. `backend/src/routes/index.ts`
+   → Copie o conteúdo de: **Backend - index.ts**
+
+11. `backend/src/controllers/user.controller.ts`
+   → Copie o conteúdo de: **Backend - user.controller.ts**
+
+12. `backend/src/controllers/item.controller.ts`
+   → Copie o conteúdo de: **Backend - item.controller.ts**
+
+13. `backend/src/controllers/proposal.controller.ts`
+   → Copie o conteúdo de: **Backend - proposal.controller.ts**
+
+14. `backend/src/services/user.service.ts`
+   → Copie o conteúdo de: **Backend - user.service.ts**
+
+15. `backend/src/services/item.service.ts`
+   → Copie o conteúdo de: **Backend - item.service.ts**
+
+16. `backend/src/services/proposal.service.ts`
+   → Copie o conteúdo de: **Backend - proposal.service.ts**
+
+17. `backend/src/types/index.ts`
+   → Copie o conteúdo de: **Backend - index.ts**
+
+18. `backend/src/server.ts`
+   → Copie o conteúdo de: **Backend - server.ts**
+
+
+## 🎨 FRONTEND
+
+1. `frontend/package.json`
+   → Copie o conteúdo de: **Frontend - package.json**
+
+2. `frontend/vite.config.ts`
+   → Copie o conteúdo de: **Frontend - vite.config.ts**
+
+3. `frontend/tsconfig.json`
+   → Copie o conteúdo de: **Frontend - tsconfig.json**
+
+4. `frontend/tsconfig.node.json`
+   → Copie o conteúdo de: **Frontend - tsconfig.node.json**
+
+5. `frontend/tailwind.config.js`
+   → Copie o conteúdo de: **Frontend - tailwind.config.js**
+
+6. `frontend/postcss.config.js`
+   → Copie o conteúdo de: **Frontend - postcss.config.js**
+
+7. `frontend/index.html`
+   → Copie o conteúdo de: **Frontend - index.html**
+
+8. `frontend/.env.example`
+   → Copie o conteúdo de: **Frontend - .env.example**
+
+9. `frontend/.gitignore`
+   → Copie o conteúdo de: **Frontend - .gitignore**
+
+10. `frontend/src/main.ts`
+   → Copie o conteúdo de: **Frontend - main.ts**
+
+11. `frontend/src/App.vue`
+   → Copie o conteúdo de: **Frontend - App.vue**
+
+12. `frontend/src/assets/main.css`
+   → Copie o conteúdo de: **Frontend - main.css**
+
+13. `frontend/src/components/AppHeader.vue`
+   → Copie o conteúdo de: **Frontend - AppHeader.vue**
+
+14. `frontend/src/components/AppFooter.vue`
+   → Copie o conteúdo de: **Frontend - AppFooter.vue**
+
+15. `frontend/src/components/ItemCard.vue`
+   → Copie o conteúdo de: **Frontend - ItemCard.vue**
+
+16. `frontend/src/views/HomeView.vue`
+   → Copie o conteúdo de: **Frontend - HomeView.vue**
+
+17. `frontend/src/views/LoginView.vue`
+   → Copie o conteúdo de: **Frontend - LoginView.vue**
+
+18. `frontend/src/views/RegisterView.vue`
+   → Copie o conteúdo de: **Frontend - RegisterView.vue**
+
+19. `frontend/src/views/ItemDetailsView.vue`
+   → Copie o conteúdo de: **Frontend - ItemDetailsView.vue**
+
+20. `frontend/src/views/MyItemsView.vue`
+   → Copie o conteúdo de: **Frontend - MyItemsView.vue**
+
+21. `frontend/src/views/NewItemView.vue`
+   → Copie o conteúdo de: **Frontend - NewItemView.vue**
+
+22. `frontend/src/views/EditItemView.vue`
+   → Copie o conteúdo de: **Frontend - EditItemView.vue**
+
+23. `frontend/src/views/MyProposalsView.vue`
+   → Copie o conteúdo de: **Frontend - MyProposalsView.vue**
+
+24. `frontend/src/views/ReceivedProposalsView.vue`
+   → Copie o conteúdo de: **Frontend - ReceivedProposalsView.vue**
+
+25. `frontend/src/views/ProfileView.vue`
+   → Copie o conteúdo de: **Frontend - ProfileView.vue**
+
+26. `frontend/src/views/AdminView.vue`
+   → Copie o conteúdo de: **Frontend - AdminView.vue**
+
+27. `frontend/src/views/NotFoundView.vue`
+   → Copie o conteúdo de: **Frontend - NotFoundView.vue**
+
+28. `frontend/src/stores/auth.ts`
+   → Copie o conteúdo de: **Frontend - auth.ts**
+
+29. `frontend/src/stores/item.ts`
+   → Copie o conteúdo de: **Frontend - item.ts**
+
+30. `frontend/src/stores/proposal.ts`
+   → Copie o conteúdo de: **Frontend - proposal.ts**
+
+31. `frontend/src/router/index.ts`
+   → Copie o conteúdo de: **Frontend - index.ts**
+
+32. `frontend/src/services/api.ts`
+   → Copie o conteúdo de: **Frontend - api.ts**
+
+33. `frontend/src/types/index.ts`
+   → Copie o conteúdo de: **Frontend - index.ts**
+
+
+## 📚 DOCUMENTAÇÃO
+
+1. `README.md`
+   → Copie o conteúdo de: **README.md - Projeto TrocaAi**
+
+2. `DOCUMENTACAO.md`
+   → Copie o conteúdo de: **TrocaAi - Documentação Completa**
+
+3. `INSTALACAO.md`
+   → Copie o conteúdo de: **Guia de Instalação e Execução**
+
+
+## 🚀 ORDEM RECOMENDADA PARA PREENCHER
+
+### 1️⃣ Primeiro - Configuração
+- backend/package.json
+- backend/tsconfig.json
+- backend/.env.example
+- frontend/package.json
+- frontend/vite.config.ts
+- frontend/tsconfig.json
+- frontend/tailwind.config.js
+
+### 2️⃣ Segundo - Backend (nesta ordem)
+1. src/types/index.ts
+2. src/entities/*.ts
+3. src/config/database.ts
+4. src/middlewares/auth.middleware.ts
+5. src/services/*.service.ts
+6. src/controllers/*.controller.ts
+7. src/routes/index.ts
+8. src/server.ts
+
+### 3️⃣ Terceiro - Frontend (nesta ordem)
+1. src/types/index.ts
+2. src/services/api.ts
+3. src/stores/*.ts
+4. src/router/index.ts
+5. src/main.ts
+6. src/App.vue
+7. src/assets/main.css
+8. src/components/*.vue
+9. src/views/*.vue
+
+### 4️⃣ Quarto - Documentação
+- README.md
+- DOCUMENTACAO.md
+- INSTALACAO.md
+
+## 💡 DICAS
+
+- Use o VS Code para facilitar (Ctrl+P para buscar arquivos)
+- Copie e cole um arquivo por vez
+- Teste o backend antes de preencher o frontend
+- Salve todos os arquivos antes de executar
+
+## ✅ CHECKLIST
+
+Marque conforme for preenchendo:
+
+### Backend
+- [ ] Todos os arquivos de configuração
+- [ ] Entities (User, Item, Proposal)
+- [ ] Middlewares
+- [ ] Services
+- [ ] Controllers
+- [ ] Routes
+- [ ] Server
+
+### Frontend
+- [ ] Arquivos de configuração
+- [ ] Types e Services
+- [ ] Stores (auth, item, proposal)
+- [ ] Router
+- [ ] Componentes base
+- [ ] Views principais
+- [ ] CSS
+
+### Documentação
+- [ ] README.md
+- [ ] DOCUMENTACAO.md
+- [ ] INSTALACAO.md
+
+## 🎯 PRÓXIMO PASSO
+
+Após preencher todos os arquivos, execute:
+
+```bash
+# Backend
+cd backend
+npm install
+npm run dev
+
+# Frontend (em outro terminal)
+cd frontend
+npm install
+npm run dev
+```
+
+Boa sorte! 🚀
