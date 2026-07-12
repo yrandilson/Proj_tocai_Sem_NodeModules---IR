@@ -103,7 +103,7 @@ describe('Chat Functionalities', () => {
       
     // User H busca as mensagens
     const resMessages = await request(app)
-      .get(`/api/chat/messages/${userGId}/${itemGId}`)
+      .get(`/api/chat/messages/${userGId}`)
       .set('Authorization', `Bearer ${tokenUserH}`)
       .expect(200);
       
