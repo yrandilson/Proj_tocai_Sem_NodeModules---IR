@@ -22,6 +22,7 @@ FROM node:20-alpine AS runtime
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 WORKDIR /app
+RUN chown appuser:appgroup /app
 
 # Copia apenas o necessário do stage de build
 COPY --from=builder --chown=appuser:appgroup /app/dist ./dist
