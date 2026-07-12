@@ -24,12 +24,12 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
 
 # Copia apenas o necessário do stage de build
-COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
+COPY --from=builder --chown=appuser:appgroup /app/dist ./dist
+COPY --from=builder --chown=appuser:appgroup /app/node_modules ./node_modules
+COPY --from=builder --chown=appuser:appgroup /app/package.json ./package.json
 
 # Pasta de uploads persistida via volume
-RUN mkdir -p uploads && chown -R appuser:appgroup /app
+RUN mkdir -p uploads && chown appuser:appgroup uploads
 
 USER appuser
 
